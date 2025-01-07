@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "222282046861",
+    "project_id": "chatme-898a9",
+    "storage_bucket": "chatme-898a9.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:222282046861:android:ac5e1b641b69f963fbb1c4",
+        "android_client_info": {
+          "package_name": "com.example.chatme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "222282046861-nfr4g2jm2vd4k74oj0knktrl592211tl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.chatme",
+            "certificate_hash": "de9a6dbac8912f712067b34665fcb4b71f99c208"
+          }
+        },
+        {
+          "client_id": "222282046861-nq3kordgod5mcqh8l51j6kgvtvisspo0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDxHR7RMSkQg3yjH4KQmOrsmr8qfHXNag"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "222282046861-nq3kordgod5mcqh8l51j6kgvtvisspo0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -27,16 +27,16 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.chatme.R
 
-@Preview(showSystemUi = true, showBackground = true)
 @Composable
-fun SignInScreen() {
+fun SignInScreen(
+    onSignInClick: () -> Unit
+) {
     val brush = Brush.linearGradient(
         listOf(
             Color(0xFF238CDD),
             Color(0xFF255DCC)
         )
     )
-
     Image(
         painter = painterResource(R.drawable.login_blur), contentDescription = null,
         modifier = Modifier.fillMaxSize(),
@@ -63,7 +63,7 @@ fun SignInScreen() {
         Spacer(modifier = Modifier.height(80.dp))
 
         Button(
-            onClick = {},
+            onClick = {onSignInClick},
             modifier = Modifier
                 .background(brush, CircleShape)
                 .fillMaxWidth(0.7f)
