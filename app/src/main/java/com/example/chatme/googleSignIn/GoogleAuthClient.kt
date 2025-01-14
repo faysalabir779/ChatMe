@@ -3,6 +3,7 @@ package com.example.chatme.googleSignIn
 import android.content.Context
 import android.content.Intent
 import android.content.IntentSender
+import com.example.chatme.R
 import com.example.chatme.SignInResult
 import com.example.chatme.UserData
 import com.example.chatme.view_model.ChatViewModel
@@ -36,10 +37,10 @@ class GoogleAuthClient(
     }
 
     private fun buildSignInRequest(): BeginSignInRequest {
-        return BeginSignInRequest.builder().setGoogleIdTokenRequestOptions(
+        return BeginSignInRequest.Builder().setGoogleIdTokenRequestOptions(
             GoogleIdTokenRequestOptions.builder().setSupported(true)
                 .setFilterByAuthorizedAccounts(false)
-                .setServerClientId("222282046861-nq3kordgod5mcqh8l51j6kgvtvisspo0.apps.googleusercontent.com")
+                .setServerClientId(context.getString(R.string.web_client_id))
                 .build()
         ).setAutoSelectEnabled(true).build()
     }

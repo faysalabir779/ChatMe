@@ -41,10 +41,11 @@ fun SignInScreen(
     Image(
         painter = painterResource(R.drawable.login_blur), contentDescription = null,
         modifier = Modifier.fillMaxSize(),
-        contentScale = ContentScale.Crop
+        contentScale = ContentScale.Crop,
+        alignment = Alignment.Center
     )
 
-    Column(horizontalAlignment = Alignment.CenterHorizontally) {
+    Column(modifier = Modifier.fillMaxSize(), horizontalAlignment = Alignment.CenterHorizontally) {
         Spacer(modifier = Modifier.height(80.dp))
         Image(
             painter = painterResource(R.drawable.oig4__rndcloiljdx4hxpn),
@@ -64,7 +65,7 @@ fun SignInScreen(
         Spacer(modifier = Modifier.height(80.dp))
 
         Button(
-            onClick = {onSignInClick},
+            onClick = onSignInClick,
             modifier = Modifier
                 .background(brush, CircleShape)
                 .fillMaxWidth(0.7f)
